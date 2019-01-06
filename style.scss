@@ -14,7 +14,18 @@
 /**************/
 
 html {
-  font-size: 100%;
+  background-color: #fff;
+  /* background-image: linear-gradient(to bottom right, #cc5500, #fff); */
+  color: #000;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 300px;
+  overflow-x: hidden;
+  /* text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); */
 }
 
 body {
@@ -31,50 +42,40 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
-
   line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
   @include mobile {
     line-height: 1.4;
   }
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 2.25rem;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.8rem;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 1.7rem;
   color: $gray;
 }
 
 p {
-  margin: 15px 0;
+  margin: 0.9rem 0;
 }
 
 a {
-  color: $blue;
+  color: currentColor;
+  cursor: pointer;
   text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
 }
 
 ul, ol {
@@ -83,52 +84,27 @@ ul, ol {
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: square inside;
 }
 
 ol {
   list-style-type: decimal;
 }
 
-ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
-}
-
-ul ul, ol ul {
-  list-style-type: circle;
-}
-
-em, i {
-  font-style: italic;
-}
-
-strong, b {
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
-}
-
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
-}
-
 .date {
   font-style: italic;
-  color: $gray;
+  color: #FE93B5;
 }
 
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
-}
+// // Specify the color of the selection
+// ::-moz-selection {
+//   color: $black;
+//   background: $lightGray;
+// }
+// ::selection {
+//   color: $black;
+//   background: $lightGray;
+// }
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
