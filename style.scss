@@ -47,6 +47,12 @@ header {
   height: 100%;
 }
 
+a {
+  color: currentColor;
+  cursor: pointer;
+  text-decoration: none;
+}
+
  // 2. Shared
  .wallpaper{
    display: block;
@@ -97,45 +103,39 @@ header {
   width: 100%;
 }
 
-h1 {
-  font-size: 2.25rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.8rem;
-}
-
-h4 {
-  font-size: 1.7rem;
-}
-
-p {
-  margin: 0.9rem 0;
-}
-
-a {
-  color: currentColor;
-  cursor: pointer;
-  text-decoration: none;
-}
+// h1 {
+//   font-size: 2.25rem;
+// }
+//
+// h2 {
+//   font-size: 2rem;
+// }
+//
+// h3 {
+//   font-size: 1.8rem;
+// }
+//
+// h4 {
+//   font-size: 1.7rem;
+// }
+//
+// p {
+//   margin: 0.9rem 0;
+// }
 
 .date {
   font-style: italic;
   color: #FE93B5;
 }
 
-::-moz-selection {
-  color: #000;
-  background: #7AB317;
-}
-::selection {
-  color: #000;
-  background: #7AB317;
-}
+// ::-moz-selection {
+//   color: #000;
+//   background: #7AB317;
+// }
+// ::selection {
+//   color: #000;
+//   background: #7AB317;
+// }
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
@@ -277,6 +277,8 @@ a {
 }
 .post {
   font-size: 1.4rem;
+  float: center;
+  display: block;
 }
 .post {
   blockquote {
@@ -308,42 +310,43 @@ a {
 footer {
   padding: 1.5rem 0;
   text-align: center;
-}
-
-/* 4. Responsiveness (use of mobile vs desktops) */
-
-@media screen and (max-width: 799px) {
-header{
-  left:50%;
-  transform:translateX(-50%);
   position: absolute;
-  width:100%;
-  max-width: 799px;
-  z-index: 1;
-  text-align: center;
-  display: block;
-}
-  .content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem 3rem;
-  }
 }
 
-@media screen and (min-width: 800px) {
-  .content {
-    align-items: top;
-    justify-content: center;
-    margin-top: 5rem;
-    padding: 6rem;
-  }
-
-  .about {
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
-}
+// /* 4. Responsiveness (use of mobile vs desktops) */
+//
+// @media screen and (max-width: 799px) {
+// header{
+//   left:50%;
+//   transform:translateX(-50%);
+//   position: absolute;
+//   width:100%;
+//   max-width: 799px;
+//   z-index: 1;
+//   text-align: center;
+//   display: block;
+// }
+//   .content {
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 5rem 3rem;
+//   }
+// }
+//
+// @media screen and (min-width: 800px) {
+//   .content {
+//     align-items: top;
+//     justify-content: center;
+//     margin-top: 5rem;
+//     padding: 6rem;
+//   }
+//
+//   .about {
+//     flex-grow: 1;
+//     flex-shrink: 1;
+//   }
+// }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
