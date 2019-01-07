@@ -2,54 +2,6 @@
 layout: default
 ---
 
-<!-- <!DOCTYPE html> -->
-<html lang="en">
-<head>
-	<!-- comandi necessari alla codifica del sito -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width-device-width, initial-scale=1.0">
-	<!-- Custom styles for this template go here -->
-	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/minireset.css">
-	<link rel="stylesheet" type="text/css" href="../css/index.css">
-	<link rel="stylesheet" type="text/css" href="../css/animations.css">
-
-	<title>Eleonora Castelli - graphics</title>
-	<!-- script per includere le icone come font -->
-	<script type="text/javascript" src="js/main.js"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
-	<!-- roba necessaria per Google Analytics - Global site tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126334524-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'UA-126334524-1');
-	</script>
-</head>
-
-<body>
-  <div id="wallpaper" class="wallpaper" data-image="../imgs/wllp.png"></div>
-	<header>
-		<ul class="topnav">
-		 <li> <a href="https://eleonoracastelli.github.io">home</a> </li>
-		 <li> <a href="https://eleonoracastelli.github.io/blog">blog</a> </li>
-		 <li> <a class="active" href="graphics">graphics</a> </li>
-	 </ul>
-	 <ul class="social">
-			<li>
-				<a href="https://github.com/eleonoracastelli" target="_blank">
-					<i class="fab fa-github"></i>
-				</a>
-			</li>
-			<li>
-				<a href="https://www.linkedin.com/in/ellcastelli" target="_blank">
-					<i class="fab fa-linkedin"></i>
-				</a>
-			</li>
-		</ul>
-	</header>
   <div class="posts">
     {% for post in site.posts %}
     <article class="post">
@@ -64,4 +16,3 @@ layout: default
     </article>
     {% endfor %}
   </div>
-</body>

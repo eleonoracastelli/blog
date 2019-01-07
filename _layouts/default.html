@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
@@ -8,10 +8,25 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!-- comandi necessari alla codifica del sito -->
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width-device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
+    <!-- script per includere le icone come font -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+    <!-- roba necessaria per Google Analytics - Global site tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126334524-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-126334524-1');
+    </script>
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
@@ -41,11 +56,9 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          {% include svg-icons.html %}
+          <!-- {% include svg-icons.html %} -->
         </footer>
       </div>
     </div>
-
-    {% include analytics.html %}
   </body>
 </html>
