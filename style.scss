@@ -93,7 +93,7 @@ a {
 
 .about {
   background-color: #fff;
-  // float: center;
+  float: center;
   max-width: 26rem;
   padding: 1rem 1rem 0rem 0rem;
 }
@@ -334,19 +334,19 @@ footer {
 //   }
 // }
 //
-// @media screen and (min-width: 800px) {
-//   .content {
-//     align-items: top;
-//     justify-content: center;
-//     margin-top: 5rem;
-//     padding: 6rem;
-//   }
-//
-//   .about {
-//     flex-grow: 1;
-//     flex-shrink: 1;
-//   }
-// }
+@media screen and (min-width: 800px) {
+  .content {
+    align-items: top;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 6rem;
+  }
+
+  .about {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
