@@ -60,11 +60,11 @@
     <!-- </div> -->
 
     <div id="main" role="main" class="content">
+      <div class="site-info">
+        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+        <p class="site-description">{{ site.description }}</p>
+      </div>
       <div class="about">
-        <div class="site-info">
-          <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-          <p class="site-description">{{ site.description }}</p>
-        </div>
         {{ content }}
       </div>
     </div>
