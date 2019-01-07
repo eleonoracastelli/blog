@@ -93,11 +93,13 @@ a {
 
 .about {
   background-color: #fff;
-  float: center;
+  // float: center;
   max-width: 26rem;
   padding: 1rem 1rem 0rem 0rem;
 }
-
+.description {
+  font-size: 1.4rem;
+}
 .container {
   max-width: 26rem;
   width: 100%;
