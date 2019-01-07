@@ -56,18 +56,8 @@ header {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.7;
-  @include mobile {
-    line-height: 1.4;
-  }
-}
-
 h1 {
   font-size: 2.25rem;
-  a {
-    color: inherit;
-  }
 }
 
 h2 {
@@ -80,7 +70,6 @@ h3 {
 
 h4 {
   font-size: 1.7rem;
-  color: #000;
 }
 
 p {
@@ -91,19 +80,6 @@ a {
   color: currentColor;
   cursor: pointer;
   text-decoration: none;
-}
-
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
-}
-
-ul {
-  list-style-type: square inside;
-}
-
-ol {
-  list-style-type: decimal;
 }
 
 .date {
@@ -123,15 +99,15 @@ ol {
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
+// .clearfix:before,
+// .clearfix:after {
+//     content: " ";
+//     display: table;
+// }
+//
+// .clearfix:after {
+//     clear: both;
+// }
 
 /*********************/
 /* LAYOUT / SECTIONS */
@@ -140,11 +116,6 @@ ol {
 //
 // .masthead
 //
-
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
 
 .site-avatar {
   float: left;
@@ -183,21 +154,14 @@ ol {
 }
 
 .site-description {
-  margin: -5px 0 0 0;
-  color: #000;
-  font-size: 16px;
+  font-family: "Montserrat", "IBM Plex Sans", sans-serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
 
   @include mobile {
     margin: 3px 0;
   }
 }
-
-  a {
-    color: currentColor;
-    cursor: pointer;
-    text-decoration: none;
-  }
-
 
 .topnav {
   display: flex;
