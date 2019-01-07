@@ -92,38 +92,40 @@ a {
 }
 
 .about {
-  background-color: #fff;
+  background-color: rgba(1,1,1,0.5);
   float: center;
-  max-width: 36rem;
+  max-width: 40rem;
   padding: 1rem 1rem 0rem 0rem;
 }
+
 .description {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .container {
   max-width: 26rem;
   width: 100%;
 }
 
-// h1 {
-//   font-size: 2.25rem;
-// }
-//
-// h2 {
-//   font-size: 2rem;
-// }
-//
-// h3 {
-//   font-size: 1.8rem;
-// }
-//
-// h4 {
-//   font-size: 1.7rem;
-// }
-//
-// p {
-//   margin: 0.9rem 0;
-// }
+h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+p {
+  margin: 0.9rem 0;
+}
 
 .date {
   font-style: italic;
