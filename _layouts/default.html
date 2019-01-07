@@ -31,7 +31,7 @@
   </head>
 
   <body>
-    <div id="wallpaper" class="wallpaper" data-image="imgs/wllp.png"></div>
+    <div id="wallpaper" class="wallpaper" data-image="https://raw.githubusercontent.com/eleonoracastelli/eleonoracastelli.github.io/master/imgs/wllp.png"></div>
     <!-- <div class="wrapper-masthead"> -->
       <!-- <div class="container"> -->
         <header class="clearfix">
@@ -56,15 +56,15 @@
         </header>
         <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-        <div class="site-info">
-          <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-          <p class="site-description">{{ site.description }}</p>
-        </div>
       <!-- </div> -->
     <!-- </div> -->
 
     <div id="main" role="main" class="content">
       <div class="about">
+        <div class="site-info">
+          <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+          <p class="site-description">{{ site.description }}</p>
+        </div>
         {{ content }}
       </div>
     </div>
@@ -72,7 +72,7 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          <!-- {% include svg-icons.html %} -->
+        Eleonora Castelli, 2019.
         </footer>
       </div>
     </div>
