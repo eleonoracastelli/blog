@@ -94,7 +94,7 @@ a {
 .about {
   background-color: #fff;
   float: center;
-  max-width: 26rem;
+  max-width: 36rem;
   padding: 1rem 1rem 0rem 0rem;
 }
 .description {
@@ -314,26 +314,26 @@ footer {
 }
 
 // /* 4. Responsiveness (use of mobile vs desktops) */
-//
-// @media screen and (max-width: 799px) {
-// header{
-//   left:50%;
-//   transform:translateX(-50%);
-//   position: absolute;
-//   width:100%;
-//   max-width: 799px;
-//   z-index: 1;
-//   text-align: center;
-//   display: block;
-// }
-//   .content {
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 5rem 3rem;
-//   }
-// }
-//
+
+@media screen and (max-width: 799px) {
+header{
+  left:50%;
+  transform:translateX(-50%);
+  position: absolute;
+  width:100%;
+  max-width: 799px;
+  z-index: 1;
+  text-align: center;
+  display: block;
+}
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .content {
     align-items: top;
